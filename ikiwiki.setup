@@ -15,7 +15,6 @@ adminemail: admin@branchable.com
 adminuser:
 - http://joey.kitenet.net/
 - http://joeyh.name/
-- smcv
 # users who are banned from the wiki
 banned_users:
 - http://tonyguards.myopenid.com/
