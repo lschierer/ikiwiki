@@ -1,6 +1,7 @@
 ikiwiki (3.20180105-1) UNRELEASED; urgency=medium
 
   * Switch to non-native packaging
+    - d/control: Move packaging from upstream git to salsa.debian.org
     - d/gbp.conf: Configure for a non-native package
     - d/source/format: set to 3.0 (quilt)
     - d/watch: Look for new releases in upstream git
