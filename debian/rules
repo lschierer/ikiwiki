@@ -6,6 +6,11 @@ override_dh_auto_configure:
 	# keeps it out of /usr/local
 	dh_auto_configure -- PREFIX=/usr
 
+override_dh_auto_install:
+	dh_auto_install
+	perl -p -i -e '1s,^#!.*/python$$,#!/usr/bin/python3,' \
+		debian/tmp/usr/lib/ikiwiki/plugins/*
+
 override_dh_compress:
 	# avoid compressing files in the doc wiki
 	dh_compress -Xhtml

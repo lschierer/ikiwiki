@@ -8,6 +8,7 @@ ikiwiki (3.20180105-1) UNRELEASED; urgency=medium
     - d/watch: Look for new releases in upstream git
   * New upstream release
     - d/copyright: Drop stanzas for files no longer shipped
+  * Change rst plugin's interpreter from Python 2 to Python 3
 
  -- Simon McVittie <smcv@debian.org>  Sat, 06 Jan 2018 15:14:29 +0000
 
