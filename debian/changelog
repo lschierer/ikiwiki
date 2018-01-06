@@ -1,3 +1,12 @@
+ikiwiki (3.20171001-1) UNRELEASED; urgency=medium
+
+  * Switch to non-native packaging
+    - d/gbp.conf: Configure for a non-native package
+    - d/source/format: set to 3.0 (quilt)
+    - d/watch: Look for new releases in upstream git
+
+ -- Simon McVittie <smcv@debian.org>  Sat, 06 Jan 2018 15:14:29 +0000
+
 ikiwiki (3.20171001) unstable; urgency=medium
 
   [ Joey Hess ]
