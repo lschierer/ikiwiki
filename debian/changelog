@@ -9,6 +9,7 @@ ikiwiki (3.20180105-1) UNRELEASED; urgency=medium
   * New upstream release
     - d/copyright: Drop stanzas for files no longer shipped
   * Change rst plugin's interpreter from Python 2 to Python 3
+  * Remove unused Lintian overrides for duplicate word false positives
 
  -- Simon McVittie <smcv@debian.org>  Sat, 06 Jan 2018 15:14:29 +0000
 
