@@ -1,4 +1,4 @@
-ikiwiki (3.20180228-1) UNRELEASED; urgency=medium
+ikiwiki (3.20180228-1) unstable; urgency=medium
 
   * New upstream release
     - core: Don't send relative redirect URLs when behind a reverse proxy
@@ -19,7 +19,7 @@ ikiwiki (3.20180228-1) UNRELEASED; urgency=medium
       (Closes: #891647)
   * Stop rewriting shebang lines of Python 3 scripts
 
- -- Simon McVittie <smcv@debian.org>  Wed, 28 Feb 2018 10:45:44 +0000
+ -- Simon McVittie <smcv@debian.org>  Wed, 28 Feb 2018 10:48:32 +0000
 
 ikiwiki (3.20180105-1) unstable; urgency=medium
 
