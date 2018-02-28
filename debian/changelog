@@ -1,3 +1,25 @@
+ikiwiki (3.20180228-1) UNRELEASED; urgency=medium
+
+  * New upstream release
+    - core: Don't send relative redirect URLs when behind a reverse proxy
+    - core: Escape backticks etc. in directive error messages as HTML
+      entities so that the error message is not subsequently parsed as
+      Markdown
+    - mdwn: Enable fenced code blocks, PHP Markdown Extra-style definition
+      lists and GitHub-style extensions to HTML tag syntax when used with
+      Discount >= 2.2.0 (Closes: #888055)
+    - img: Fix auto-detection of image format (if enabled, which is
+      strongly discouraged) with ImageMagick >= 6.9.8-3
+    - rst: Use Python 3 instead of Python 2
+    - build: `set -e` before each `for` loop, so that errors are reliably
+      trapped
+    - build: Use if/then instead of `||` so that the `-e` flag works
+    - build: Ensure that pm_to_blib finishes before rewriting shebang lines
+    - t: Make the img test pass with ImageMagick >= 6.9.8-3
+      (Closes: #891647)
+
+ -- Simon McVittie <smcv@debian.org>  Wed, 28 Feb 2018 10:45:44 +0000
+
 ikiwiki (3.20180105-1) unstable; urgency=medium
 
   * Switch to non-native packaging
