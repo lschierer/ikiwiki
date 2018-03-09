@@ -1,6 +1,11 @@
 #!/usr/bin/make -f
+
+export IKIWIKI_TEST_ASSUME_MODERN_DISCOUNT=1
+export LC_ALL=C.UTF-8
+export TZ=UTC
+
 %:
-	LC_ALL=C.UTF-8 TZ=UTC dh $@
+	dh $@
 
 override_dh_auto_configure:
 	# keeps it out of /usr/local

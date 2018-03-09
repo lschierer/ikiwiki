@@ -1,6 +1,8 @@
 ikiwiki (3.20180311-1) UNRELEASED; urgency=medium
 
   * New upstream release
+  * (Build-)Depend on libmarkdown2 (>= 2.2), and opt-in to the new test
+    that assumes that version
 
  -- Simon McVittie <smcv@debian.org>  Sun, 11 Mar 2018 15:58:05 +0000
 
