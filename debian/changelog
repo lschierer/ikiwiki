@@ -1,3 +1,9 @@
+ikiwiki (3.20180311-1) UNRELEASED; urgency=medium
+
+  * New upstream release
+
+ -- Simon McVittie <smcv@debian.org>  Sun, 11 Mar 2018 15:58:05 +0000
+
 ikiwiki (3.20180228-1) unstable; urgency=medium
 
   * New upstream release
