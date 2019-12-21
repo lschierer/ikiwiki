@@ -102,6 +102,7 @@ banned_users:
 - ip(110.172.140.98)
 - arachni_name
 - SlodreDalk
+- 360boom720
 # where the source of the wiki is located
 srcdir: /home/b-ikiwiki/source/doc
 # where to build the wiki
