@@ -103,6 +103,7 @@ banned_users:
 - arachni_name
 - SlodreDalk
 - 360boom720
+- 360boom720@96742a13497f17d9af1b1acd9adf87015b1d47bc
 # where the source of the wiki is located
 srcdir: /home/b-ikiwiki/source/doc
 # where to build the wiki
