@@ -218,8 +218,7 @@ libdirs: []
 # extra library and plugin directory (searched after libdirs)
 libdir: /home/b-ikiwiki/.ikiwiki
 # environment variables
-ENV:
-  TMPDIR: /home/b-ikiwiki/tmp
+#ENV: ''
 # time zone name
 timezone: JEST+4
 # regexp of normally excluded files to include
@@ -278,7 +277,6 @@ gitmaster_branch: master
 # gitpush plugin
 # git repository urls that changes are pushed to
 git_push_to:
-- git@github.com:joeyh/ikiwiki.git
 - joey@git.kitenet.net:/srv/git/ikiwiki.git
 
 # htmlscrubber plugin
@@ -359,7 +357,7 @@ locked_pages: tipjar or tips/DreamHost
 
 # openid plugin
 # url pattern of openid realm (default is cgiurl)
-#openid_realm: ''
+openid_realm: http://*.branchable.com/
 # url to ikiwiki cgi to use for openid authentication (default is cgiurl)
 #openid_cgiurl: ''
 
@@ -388,6 +386,10 @@ langdefdir: /usr/share/highlight/langDefs
 #multimarkdown: 0
 # disable use of markdown discount?
 #nodiscount: 0
+# enable footnotes in Markdown (where supported)?
+mdwn_footnotes: 1
+# interpret line like 'A. First item' as ordered list when using Discount?
+mdwn_alpha_lists: 0
 
 # po plugin
 # master language (non-PO files)
@@ -433,8 +435,8 @@ po_link_to: default
 
 ######################################################################
 # web plugins
-#   (404, attachment, comments, editdiff, edittemplate, getsource, google,
-#    goto, mirrorlist, remove, rename, repolist, search, theme, userlist,
+#   (404, attachment, comments, editdiff, edittemplate, google, goto,
+#    mirrorlist, remove, rename, repolist, search, theme, userlist,
 #    websetup, wmd)
 ######################################################################
 
@@ -459,10 +461,6 @@ comments_allowauthor: 0
 comments_commit: 1
 # Restrict formats for comments to (no restriction if empty)
 comments_allowformats: ''
-
-# getsource plugin
-# Mime type for returned source.
-#getsource_mimetype: text/plain; charset=utf-8
 
 # mirrorlist plugin
 # list of mirrors
@@ -518,13 +516,13 @@ websetup_show_unsafe: 0
 
 # calendar plugin
 # base of the archives hierarchy
-#archivebase: archives
+archivebase: archives
 # PageSpec of pages to include in the archives, if option `calendar_autocreate` is true.
-#archive_pagespec: page(posts/*) and !*/Discussion
+archive_pagespec: '*'
 # autocreate new calendar pages?
-#calendar_autocreate: 1
+calendar_autocreate: ''
 # if set, when building calendar pages, also build pages of year and month when no pages were published (building empty calendars).
-#calendar_fill_gaps: 1
+calendar_fill_gaps: 1
 
 # img plugin
 # Image formats to process (jpeg, png, gif, svg, pdf or 'everything' to accept all)
