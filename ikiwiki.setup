@@ -16,6 +16,7 @@ adminuser:
 - http://joey.kitenet.net/
 - http://joeyh.name/
 - smcv
+- id@joeyh.name
 # users who are banned from the wiki
 banned_users:
 - http://tonyguards.myopenid.com/
