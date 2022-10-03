@@ -107,6 +107,8 @@ banned_users:
 - 360boom720@96742a13497f17d9af1b1acd9adf87015b1d47bc
 - gogreenjogja1453@56603ad3936bedbc9abc21927a3fb31a5a84a8da
 - ip(114.142.169.63)
+- jaysonbaldecanas1986@02a3781ec9b12161d643d2a35782561391092501
+- ip(193.150.70.77)
 # where the source of the wiki is located
 srcdir: /home/b-ikiwiki/source/doc
 # where to build the wiki
