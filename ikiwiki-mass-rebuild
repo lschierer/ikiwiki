@@ -27,15 +27,31 @@ sub processline {
 	}
 }
 
+sub run_this_script_as {
+	my $user=shift;
+	my $child;
+
+	if ($child = fork()) {
+		waitpid($child, 0);
+	} elsif (defined $child) {
+		my $uid = getpwnam($user);
+		if (defined $uid) {
+			my $gid = (getpwuid($uid))[3];
+			$( = $) = "$gid $gid";
+			$< = $> = $uid;
+			exec($0, "--nonglobal", @ARGV) or print STDERR "warning: processing exec for $user failed with code $!\n";
+		}
+	} else {
+		print STDERR "warning: processing fork for $user failed with code $!\n";
+	}
+}
+
 my %users;
 sub processuser {
 	my $user=shift;
 	return if $user=~/^-/ || $users{$user};
 	$users{$user}=1;
-	my $ret=system("su", $user, "-s", "/bin/sh", "-c", "--", "$0 --nonglobal @ARGV");
-	if ($ret != 0) {
-		print STDERR "warning: processing for $user failed with code $ret\n";
-	}
+	run_this_script_as($user);
 }
 
 sub processlist {
