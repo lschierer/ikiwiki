@@ -15,8 +15,9 @@ adminemail: admin@branchable.com
 adminuser:
 - http://joey.kitenet.net/
 - http://joeyh.name/
-- smcv
 - id@joeyh.name
+- jon+ikiwiki@dow.land
+- smcv
 # users who are banned from the wiki
 banned_users:
 - http://tonyguards.myopenid.com/
@@ -265,7 +266,7 @@ git_wrapper: /home/b-ikiwiki/source.git/hooks/post-update
 # mode for git_wrapper (can safely be made suid)
 git_wrappermode: 6755
 # git pre-receive hook to generate
-git_test_receive_wrapper: /home/b-ikiwiki/source.git/hooks/pre-receive
+git_test_receive_wrapper: /home/b-ikiwiki/source.git/hooks/pre-receive.wrapper
 # unix users whose commits should be checked by the pre-receive hook
 untrusted_committers:
 - ikiwiki-anon
