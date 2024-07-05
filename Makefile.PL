@@ -220,6 +220,7 @@ WriteMakefile(
 	PREREQ_PM	=> {
 		'XML::Simple'		=> "0",
 		'Text::Markdown'	=> "0",
+		'Date::Manip'		=> "0",
 		'Date::Parse'		=> "0",
 		'HTML::Template'	=> "0",
 		'HTML::Scrubber'	=> "0",

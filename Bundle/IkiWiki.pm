@@ -22,6 +22,7 @@ HTML::Template
 HTML::Parser
 URI 1.36
 XML::Simple
+Date::Manip
 Date::Parse
 CGI::FormBuilder
 CGI::Session

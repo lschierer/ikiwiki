@@ -152,9 +152,9 @@ sub preprocess (@) {
 		# fallthrough
 	}
 	elsif ($key eq 'date') {
-		eval q{use Date::Parse};
+		eval q{use Date::Manip};
 		if (! $@) {
-			my $time = str2time($value);
+			my $time = UnixDate( ParseDate($value), "%s");
 			if (defined $time) {
 				$IkiWiki::pagectime{$page}=$time;
 			}
@@ -167,9 +167,9 @@ sub preprocess (@) {
 		}
 	}
 	elsif ($key eq 'updated') {
-		eval q{use Date::Parse};
+		eval q{use Date::Manip};
 		if (! $@) {
-			my $time = str2time($value);
+			my $time = UnixDate ( ParseDate($value), "%s");
 			if (defined $time) {
 				$pagestate{$page}{meta}{updated}=$time;
 			}
