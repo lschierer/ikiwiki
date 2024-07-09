@@ -22,7 +22,7 @@ File::MimeInfo
 Locale::gettext
 Net::OpenID::Consumer
 LWPx::ParanoidAgent
-Crypt::SSLeay
+IO::Socket::SSL
 Text::CSV
 Text::Typography
 Text::Textile
